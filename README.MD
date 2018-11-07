@@ -144,9 +144,11 @@ So there you have it, feel free to use it, pull it apart and improve it. This ha
 
 ## The Self Managed WordPress Facebook Group
 
-We have started a Facebook group for everyone who is rolling their own WordPress hosting solution using whatever their tool of choice is. We invite anyone who reads this to join, if any of the above is pertinent to your needs then you are definitely welcome and our community would love to welcome you.
+We have started a Facebook group for everyone who is rolling their own WordPress hosting solution using whatever tool of choice, all are welcome no matter if you use EasyEngine, ServerPilot, GridPane, RunCloud, or just pure terminal heroics. We invite anyone who reads this to join, if any of the above is pertinent to your needs then you are definitely one of us and we look forward to welcoming you.
 
 [Join Us Here](https://www.facebook.com/groups/selfmanagedwordpress)
+
+
 
 
 
