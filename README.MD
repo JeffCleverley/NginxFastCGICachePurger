@@ -4,7 +4,7 @@ Nginx FastCGI Purging is incredibly powerful, used appropriately static WordPres
 
 That being said, fastCGI cache purging has always been a sticking point in it's implementation. Native Nginx FastCGI cache purging is one of the premium features of Nginx Plus, and as such users of the free platform have relied on third party modules to clear the cache when content updates.
 
-The most commonly used module FRiCKLE's ngx_cache_purge module has been the go to recommendation of the community for some time, with Popular plugins such as Nginx Helper and Nginx Cache relying on this module to clear their cache.
+The most commonly used module FRiCKLE's ngx_cache_purge module has been the go to recommendation of the community for some time, with Popular plugins such as [Nginx Helper](https://wordpress.org/plugins/nginx-helper/) and [Nginx Cache](https://wordpress.org/plugins/nginx-cache/) relying on this module to clear their cache.
 
 For single user server stacks, where the Nginx Web Server user and the PHP web application user were one and the same, www-data or otherwise, this combination has been incredibly reliable and allowed many people to enjoy the awesome benefits of Nginx caching.
 
