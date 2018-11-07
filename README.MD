@@ -1,4 +1,4 @@
-#NGINX FastCGI Cache Purger
+# NGINX FastCGI Cache Purger
 
 Nginx FastCGI Purging is incredibly powerful, used appropriately static WordPress websites can handle enormous amounts of traffic and not choke.
 
