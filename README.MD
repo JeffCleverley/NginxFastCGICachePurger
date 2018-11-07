@@ -16,7 +16,7 @@ This problem has gone unresolved for some time...
 
 The Nginx FastCGI Cache Purger plugin, alongside a very specific Nginx compile and configuration, will allow your WordPress sites to clear their cache from within the WP-Admin.
 
-The plugin is OOP but basic, it has been built as a foundation for others to take and do as they will. It has been provided to the community by GridPane and RunCloud. Currently, the only two VPS management platforms that I am aware of that utilise this stack.
+The plugin is OOP but basic, it has been built as a foundation for others to take and do as they will. It has been provided to the community by a collaboration between GridPane and RunCloud, with me developing the plugin and working out how to implement it in WordPress based upon Jebat's identification of the correct module and call. Currently, the only two VPS management platforms that I am aware of that utilise this stack.
 
 With GridPane, everything comes configured and works out of the box, but RunCloud will require some slight updates to your Nginx Configuration if you have been using their published tutorial.
 
