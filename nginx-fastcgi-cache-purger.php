@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Nginx FastCGI Cache Purger or The Nginx Helper Helper
  *
@@ -47,7 +46,7 @@ function activate_nginx_fastcgi_cache_purger() {
  * The code that runs during plugin deactivation.
  */
 function deactivate_nginx_fastcgi_cache_purger() {
-	require_once NFCP_DIR_PATH . 'src/class-gpcp-deactivator.php';
+	require_once NFCP_DIR_PATH . 'src/class-nfcp-deactivator.php';
 	Nginx_FastCGI_Cache_Purger_Plugin_Deactivator::deactivate();
 }
 
