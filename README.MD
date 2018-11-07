@@ -1,5 +1,7 @@
 # NGINX FastCGI Cache Purger
 
+(If this plugin is of interest, you might like to [join us](https://www.facebook.com/groups/selfmanagedwordpress) at the Self Managed WordPress Group!)
+
 Nginx FastCGI Purging is incredibly powerful, used appropriately static WordPress websites can handle enormous amounts of traffic and not choke.
 
 That being said, fastCGI cache purging has always been a sticking point in it's implementation. Native Nginx FastCGI cache purging is one of the premium features of Nginx Plus, and as such users of the free platform have relied on third party modules to clear the cache when content updates.
