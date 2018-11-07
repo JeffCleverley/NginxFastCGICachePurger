@@ -28,7 +28,7 @@ So....
 
 First things first...
 
-**This plugin does NOT do incremental purging. It should be used alongside Nginx Helper, think of it as an Nginx Helper Helper for Multi User Nginx Stacks.**
+**This plugin does NOT do incremental purging. It should be used alongside Nginx Helper, think of it as an Nginx Helper Helper for Multi User Nginx Stacks that are compiled with the Torden fork of the ngx_cache_purge module.**
 
 **It does one thing, and one thing only... Purges all Nginx FastCGI cache for WordPress site from within that site's WP-Admin. Using this plugin alongside Nginx Helper means you will have both incremental cache purging when your site content updates, and the ability to purge all cache when you update non content based asset, for example theme assets.**
 
