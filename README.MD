@@ -128,6 +128,10 @@ location ~ /purgeall {
 
 Like any other WordPress plugin...
 
+## Using it
+
+Go to it's settings page and click the big Purge button
+
 ## The Purging Mechanism
 
 So what is the purging mechanism?
