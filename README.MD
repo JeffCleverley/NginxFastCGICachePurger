@@ -6,7 +6,7 @@ That being said, fastCGI cache purging has always been a sticking point in it's 
 
 The most commonly used module FRiCKLE's ngx_cache_purge module has been the go to recommendation of the community for some time, with Popular plugins such as [Nginx Helper](https://wordpress.org/plugins/nginx-helper/) and [Nginx Cache](https://wordpress.org/plugins/nginx-cache/) relying on this module to clear their cache.
 
-For single user server stacks, where the Nginx Web Server user and the PHP web application user were one and the same, www-data or otherwise, this combination has been incredibly reliable and allowed many people to enjoy the awesome benefits of Nginx caching.
+For single user server stacks, where the Nginx Web Server user and the PHP web application user were one and the same, www-data or otherwise, this combination has been incredibly reliable and allowed many people to enjoy the awesome benefits of Nginx caching. It is worth noting that the RTCamp Nginx Helper plugin, when running on this Nginx build, will correctly function to do partial content-based purges in a multiuser (non www-data exclusive) Nginx environment. 
 
 But not all server stacks are born equal, many platforms employ a more dynamic set up where each web application has it's own user, this allows for servers to host multiple applications that each have different resource requirements, which is absolutely fantastic... but makes clearing the cache a nightmare. When installed on a WordPress site hosted on a multi-user stack, neither of the plugins mentioned above have the filesystem permissions to do a complete cache purge, and so for a long long time we have been SSHing into our servers and purging the cache with a bash command.
 
@@ -16,7 +16,9 @@ This problem has gone unresolved for some time...
 
 The Nginx FastCGI Cache Purger plugin, alongside a very specific Nginx compile and configuration, will allow your WordPress sites to clear their cache from within the WP-Admin.
 
-The plugin is OOP but basic, it has been built as a foundation for others to take and do as they will. It has been provided to the community by a collaboration between GridPane and RunCloud, with me developing the plugin and working out how to implement it in WordPress based upon Jebat's identification of the correct module and call. Currently, the only two VPS management platforms that I am aware of that utilise this stack.
+The plugin is OOP but basic, it has been built as a foundation for others to take and do as they will. It has been provided to the community by a collaboration between GridPane and RunCloud, with me developing the plugin and working out how to implement it in WordPress based upon Jebat's identification of the correct module and call. 
+
+Currently, GridPane and RunCloud are only two VPS management platforms that I am aware of that utilise a compatible stack for this plugin.
 
 With GridPane, everything comes configured and works out of the box, but RunCloud will require some slight updates to your Nginx Configuration if you have been using their published tutorial.
 
@@ -26,9 +28,9 @@ So....
 
 First things first...
 
-This plugin does NOT do incremental purging. It is a proof of concept and as is should be used alongside Nginx Helper, think of it as an Nginx Helper Helper for Multi User Nginx Stacks.
+**This plugin does NOT do incremental purging. It should be used alongside Nginx Helper, think of it as an Nginx Helper Helper for Multi User Nginx Stacks.**
 
-It does one thing, and one thing only... Purges all Nginx FastCGI cache for WordPress site from within that site's WP-Admin.
+**It does one thing, and one thing only... Purges all Nginx FastCGI cache for WordPress site from within that site's WP-Admin. Using this plugin alongside Nginx Helper means you will have both incremental cache purging when your site content updates, and the ability to purge all cache when you update non content based asset, for example theme assets.**
 
 ## The Nginx Compile
 
