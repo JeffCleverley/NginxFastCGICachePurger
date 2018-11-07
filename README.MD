@@ -30,7 +30,7 @@ This plugin does NOT do incremental purging. It is a proof of concept and as is 
 
 It does one thing, and one thing only... Purges all Nginx FastCGI cache for WordPress site from within that site's WP-Admin.
 
-##The Nginx Compile
+## The Nginx Compile
 
 Your Nginx compile needs to include the [Torden Fork of ngx_cache_purge module](https://github.com/torden/ngx_cache_purge), this will not work with the original FRiCKLE module.
 
@@ -40,7 +40,7 @@ In our case, we started from scratch and just made our own compile. An easy way 
 
 Doing a recompile isn't too hard, there is a [tonne of good material online](https://serversforhackers.com/c/compiling-third-party-modules-into-nginx).
 
-##The Nginx Configurations
+## The Nginx Configurations
 
 I am not going to go into detail regarding all the Nginx Configurations required to properly tweak FastCGI caching
 
