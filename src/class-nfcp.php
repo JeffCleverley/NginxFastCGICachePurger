@@ -30,7 +30,7 @@ class Nginx_FastCGI_Cache_Purger {
 		if ( is_admin() ) {
 
 			require_once( $this->plugin_dir_path . 'src/class-nfcp-admin.php' );
-			$this->admin = new Nginx_FastCGI_Cache_Purger_Admin;
+			$this->admin = new Nginx_Cache_Purger_Admin;
 			$this->admin->init();
 
 		}
@@ -54,4 +54,4 @@ function Nginx_Cache_Purger() {
 	return $object;
 }
 
-add_action( 'plugins_loaded', array( Nginx_FastCGI_Cache_Purger(), 'init' ) );
+add_action( 'plugins_loaded', array( Nginx_Cache_Purger(), 'init' ) );
